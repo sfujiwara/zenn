@@ -68,7 +68,7 @@ SMO の基本アイデアは次のようなシンプルなものです:
 上記のアイデアでもう少しちゃんと詰めなければいけなさそうな
 
 1. 2 つの添字はどうやって選ぶのか？
-   - 特にこの部分を Working Set Selection (WSS) と呼んでいます
+   - 特にこの部分を Working Set Selection (WSS) と呼ぶ
 3. 最適解であることはどうやって判定するのか
 
 あたりを見ていきましょう。
@@ -95,7 +95,7 @@ I_{\rm up}(\alpha) := \{ t \mid \alpha_t < C, y_t = 1 {\rm \ or \ } \alpha_t > 0
 I_{\rm low}(\alpha) := \{ t \mid \alpha_t < C, y_t = -1 {\rm \ or \ } \alpha_t > 0, y_t = 1 \}.
 $$
 
-[^2]: この表記は[Working Set Selection Using Second Order Information for Training Support Vector Machines](https://www.csie.ntu.edu.tw/~cjlin/papers/quadworkset.pdf) の 2 節の表記から取ってきたものなので、一般的に使われる式から実装に都合が良いように少し等価な変形を行ったものです。SVM の KKT 条件についてもう少し一般的な表記や導出を知りたい場合は、個人的には[カーネル法入門](https://www.amazon.co.jp/dp/4254128088/)の 4 章あたりを読むのもおすすめです。
+[^2]: この表記は[Working Set Selection Using Second Order Information for Training Support Vector Machines](https://www.csie.ntu.edu.tw/~cjlin/papers/quadworkset.pdf) の 2 節の表記から取ってきたものなので、一般的に使われる式から実装に都合が良いように少し等価な変形をしたものです。SVM の KKT 条件についてもう少し一般的な表記や導出を知りたい場合は、個人的には[カーネル法入門](https://www.amazon.co.jp/dp/4254128088/)の 4 章あたりを読むのもおすすめです。
 
 細かい導出は論文を参照してもらうとして、ここでは上記の式を真面目に追う必要はありません。
 

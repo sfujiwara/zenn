@@ -1,0 +1,27 @@
+{
+  "plugins": {},
+  "filters": {},
+  "rules": {
+    "preset-ja-technical-writing": {
+      "ja-no-weak-phrase": false,
+      "no-exclamation-question-mark": false,
+      "ja-no-mixed-period": false,
+      "no-doubled-joshi": false,
+      "sentence-length": {
+        "max": 256
+      },
+      "max-kanji-continuous-len": {
+        "max": 10,
+        "allow": ["確率的勾配降下法"]
+      },
+      "max-comma": {
+        "max": 5
+      }
+    },
+    "preset-ja-spacing": {
+      "ja-space-between-half-and-full-width": {
+          "space": ["alphabets", "numbers"]
+      }
+    }
+  }
+}
