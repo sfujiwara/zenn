@@ -1,10 +1,10 @@
 ---
 title: "VSCode で程々に Emacs 風キーバインド"
-emoji: "👌"
+emoji: "📄"
 type: "tech"
 topics:
   - "vscode"
-published: false
+published: true
 ---
 
 # はじめに
