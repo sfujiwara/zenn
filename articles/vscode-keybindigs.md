@@ -69,7 +69,7 @@ Emacs と同じように `ctrl+p` `ctrl+n` で補完候補の選択をできる�
 めちゃくちゃ頻繁にやる操作なので、そのためにカーソルキーに手を伸ばしたくない。
 
 ```json
-{
+    {
         "key": "ctrl+n",
         "command": "selectNextSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
