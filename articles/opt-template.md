@@ -131,7 +131,7 @@ def __init__(self, problem: Problem) -> None:
     self.x = self._variables_x()
 ```
 
-入力データはここで渡しています。[scikit-learn なんかだと入力データはコンストラクタではなくその後の `fit` メソッドで渡す](https://scikit-learn.org/stable/modules/linear_model.html)ので、最適化でも `solve` メソッドを呼び出す時に渡せば良いのではと思うかもしれません。ですが、最適化の場合は入力データをもとに前処理をして必要な値をフィールドにセットしておきたいことが多く、個人的にはここで渡してしまった方が見通しが良いかなと思っています。
+[scikit-learn なんかだと入力データはコンストラクタではなくその後の `fit` メソッドで渡す](https://scikit-learn.org/stable/modules/linear_model.html)ので、最適化でも `solve` メソッドを呼び出す時に渡せば良いのではと思うかもしれません。ですが、最適化の場合は入力データをもとに前処理をして必要な値をフィールドにセットしておきたいことが多く、個人的にはここで渡してしまった方が見通しが良いかなと思っています。
 
 たとえば、入力データをもとに ID とインデックスの対応関係を保持する `_product_id_to_idx` dict を作っています。
 
